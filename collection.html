@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOSTRA</title>
+     <!--Tailwind CSS CDN Link-->
+     <link href="
+     https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+     " rel="stylesheet">
+     
+</head>
+<body>
+
+   <!--Responsive Navbar-->
+   <nav class="flex items-center justify-between p-5 sticky z-0">
+    <h2 class="font-bold text-2xl">Nostra</h2>
+
+    <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+    class="w-6 h-6 md:hidden">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg>
+
+    <ul class="flex gap-5 text-gray-600 hidden md:flex ">
+        <li>
+            <a class="hover:underline hover:text-black" href="index.html">Home</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-black" href="#">New Arrival</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-black" href="#">Most Wanted</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-black" href="collection.html">Collections</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-black" href="contact.html">Contact Us</a>
+        </li>
+    </ul>
+   </nav>
+
+   <!--Side navbar-->
+   <section id="sidenav" class="bg-black text-white fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 1oovh; right: -50%;">
+    <div class="text-right p-5">
+        <p id="closenav" class="inline cursor-pointer">x</p>
+    </div>
+    <ul class="flex flex-col gap-10 items-center text-white">
+        <li>
+            <a class="hover:underline hover:text-green-200" href="index.html">Home</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-green-200" href="#">New Arrival</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-green-200" href="#">Most Wanted</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-green-200" href="collection.html">Collections</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-green-200" href="contact.html">Contact Us</a>
+        </li>
+    </ul>
+
+   </section>
+
+   <section class="text-center">
+    <h1 class="text-3xl font-bold mt-5 text-center">Collections</h1>
+
+    <input id="search" type="text" class="border border-black p-2 m-3" style="width: 80%; " placeholder="Search">
+
+</section>
+
+<section id="checkbox" class="p-5 text-center">
+    <div>
+    <label for="color" class="font-bold text-2xl">Filter BY Color</label>
+    <div class="color">
+    <input type="checkbox" id="White" name="color" value="White">
+    <label for="white">white</label>
+    <input type="checkbox" id="Black" name="color" value="black">
+    <label for="Black">Black</label>
+    <input type="checkbox" id="Brown" name="color" value="Brown">
+    <label for="Brown">Brown</label>
+</div>
+</div>
+<div>
+    <label for="type" class="font-bold text-2xl ">Filter BY Type</label>
+    <div class="type">
+    <input type="checkbox" id="T-Shirt" name="type" value="T-Shirt">
+    <label for="white">T-Shirt</label>
+    <input type="checkbox" id="Pant" name="type" value="Pant">
+    <label for="Pant">Pant</label>
+    <input type="checkbox" id="Shirt" name="type" value="Shirt">
+    <label for="Shirt">Shirt</label>
+</div>
+</div>
+
+</section>
+
+
+
+
+
+   <section id="product-container" class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5 p-5">
+    <div>
+        <img src="./images/d1.png" alt="">
+        <p>Black T-shirt</p>
+    
+    </div>
+    <div><img src="./images/d2.png" alt="">
+    <p>Brown Pant</p></div>
+    <div>
+        <img src="./images/d3.png" alt="">
+        <p>Black Hoddy</p>
+    </div>
+    <div>
+        <img src="./images/d4.png" alt="">
+        <p>White Shirt</p>
+    </div>
+    <div>
+        <img src="./images/d1.png" alt="">
+        <p>Black T-shirt</p>
+    
+    </div>
+    <div><img src="./images/d2.png" alt="">
+    <p>Brown Pant</p></div>
+    <div>
+        <img src="./images/d3.png" alt="">
+        <p>Black Hoddy</p>
+    </div>
+    <div>
+        <img src="./images/d4.png" alt="">
+        <p>White Shirt</p>
+    </div>  
+   </section>
+
+
+
+
+
+<!--Footer-->
+<section class="bg-black text-white p-10 flex flex-col gap-5">
+    <h1 class="text-4xl">Nostra</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nobis aliquid corporis dicta sit accusamus?</p>
+    <p>@ 2025 Nostra.com</p>
+
+</section>
+
+<script src="collection.js"></script>
+</body>
+</html>
