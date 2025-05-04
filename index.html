@@ -13,9 +13,9 @@
      
 </head>
 <body>
-   <div class="bg-black text-white text-center flex justify-center gap-20 ">
-    <h3 class="font-medium">Sign Up and GET 20% OFF for Your first order </h3>
-    <p>x</p>
+   <div id="promo-banner" class="bg-black text-white text-center flex justify-center gap-20 ">
+    <h3  class="font-medium">Sign Up and GET 20% OFF for Your first order </h3>
+    <button  onclick="closeBanner()" >x</button>
    </div> 
 
    <!--Responsive Navbar-->
@@ -72,23 +72,23 @@
    </section>
 
    <!--slider image-->
-   <section id="carousel" class= "justify-center relative overflow-hidden">
-    <div class="flex transition-transform duration-500">
-   <img  src="./images/main-1.png" alt="" class="w-100% ">
-   <img  src="./images/main-2.png" alt="" class="w-100% ">
+   <section id="carousel" class= "justify-center relative ">
+    <div class="flex transition duration-500">
+   <img id="img1"  src="./images/main-1.png" alt="slider" class="w-100% ">
+   <img id="img2" src="./images/main-2.png" alt="slider" class="w-100%  hidden">
     </div>
    <div class=" absolute md: right-1/2 top-1/2 hidden  justify-center sm:block">
     <h2 class="text-white text-2xl">Level Up Your Style With Our</h2>
     <p class="text-white text-xl ">Summer Collect</p>
     <p class="bg-white text-black w-20 mt-4">Shop Now</p> 
    </div>
-   <button onclick="prevSlide()">
+   <button onclick="prevImage()">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class=" w-10 absolute top-1/2 md:w-10  ">
         <path fill-rule="evenodd" d="M9.78 4.22a.75.75 0 0 1 0 1.06L7.06 8l2.72 2.72a.75.75 0 1 1-1.06 1.06L5.47 8.53a.75.75 0 0 1 0-1.06l3.25-3.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
       </svg>
       
    </button>
-   <button onclick="prevSlide()">
+   <button onclick="nextImage()">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-10 absolute top-1/2 right-0">
         <path fill-rule="evenodd" d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
       </svg>

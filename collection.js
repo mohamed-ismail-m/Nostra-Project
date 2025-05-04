@@ -71,3 +71,22 @@ function filterProducts() {
     }
   });
 }
+
+  const filters = document.querySelectorAll('.filter');
+  const products = document.querySelectorAll('.product');
+
+  filters.forEach(filter => {
+    filter.addEventListener('change', () => {
+      const selectedColors = Array.from(document.querySelectorAll('.filter[data-filter-type="color"]:checked')).map(cb => cb.value);
+      const selectedTypes = Array.from(document.querySelectorAll('.filter[data-filter-type="type"]:checked')).map(cb => cb.value);
+
+      products.forEach(product => {
+        const colorMatch = selectedColors.length === 0 || selectedColors.includes(product.dataset.color);
+        const typeMatch = selectedTypes.length === 0 || selectedTypes.includes(product.dataset.type);
+
+        product.style.display =
+        (colorMatch && typeMatch) ?
+        "inline-block" : "none";
+      });
+    });
+  });
